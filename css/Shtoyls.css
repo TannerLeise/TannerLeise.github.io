@@ -1,0 +1,173 @@
+/*NAV Bar Stuff*/
+/*------------------------------------------------------------------------------------*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top:0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+@media screen and (max-width: 600px){
+  li {
+    float: none;
+  }
+  li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5px 7px;
+    font-size: 15px;
+    text-decoration: none;
+  }
+}
+@media (max-width: 850px){
+li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 5px 7px;
+  font-size: 15px;
+  text-decoration: none;
+}
+}
+
+/*Top image and text*/
+/*------------------------------------------------------------------------------------*/
+.container-top {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered-top {
+  position: absolute;
+  font-family: "Georgia", Times, serif;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/*Other Sttuff*/
+/*------------------------------------------------------------------------------------*/
+p{
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+}
+
+h1{
+  font-family: "Georgia", Times, serif;
+  }
+
+body{
+    padding: 20px;
+    background-color: #FFDEE9;
+    background-image: linear-gradient(0deg, #a5b6b5 0%, #331717 100%);    
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+  
+.REALLYBIG{
+    padding-top: 20px;
+    font-size: 50px;
+    font-family: "Georgia", Times, serif;
+}
+.SMOL{
+  font-size: 30px;
+}
+
+.normaltext{
+    font-size: 12pt;
+}
+
+.container{
+    justify-content: center;
+    background-color: white;
+}
+/*About Me formatting*/
+/*------------------------------------------------------------------------------------*/
+.flex-container {
+  display: flex;
+  float:left;
+  padding: 10px;
+  justify-content: center;
+}
+
+.flex-item-left {
+  width: 30%;
+}
+
+.flex-item-right {
+  width: 70%;
+}
+
+/* Responsive layout - makes a one column layout (100%) instead of a two-column layout (50%) */
+@media (max-width: 800px) {
+  .flex-container{
+    display: block;
+    clear:both;
+  }
+
+  .flex-item-left {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+  }
+  .flex-item-right {
+    max-width:100%;
+    text-align: center;
+    clear:left;
+  }
+}
+
+
+/*Stuff for Personal Project Formatting*/
+/*------------------------------------------------------------------------------------*/
+.row:after {
+  display: table;
+  width: 100%;
+}
+
+/* This is the formatting of individual cells for the projects */
+.column {
+  display: table-cell;
+  padding: 16px;
+  width: 33.33%;
+  border-style: solid;
+}
+/* resizes the columns if the screen is the size of mobile */
+@media (max-width: 780px) {
+  .column { 
+    display: block;
+    width: 100%;
+  }
+}
+
+.column-image{
+  max-width: 100%;
+  height: auto
+}
