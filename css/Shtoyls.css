@@ -1,173 +1,230 @@
-/*NAV Bar Stuff*/
-/*------------------------------------------------------------------------------------*/
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top:0;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  font-size: 25px;
-  text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #111;
-}
-
-@media screen and (max-width: 600px){
-  li {
-    float: none;
-  }
-  li a{
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 5px 7px;
-    font-size: 15px;
-    text-decoration: none;
-  }
-}
-@media (max-width: 850px){
-li a{
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 5px 7px;
-  font-size: 15px;
-  text-decoration: none;
-}
-}
-
-/*Top image and text*/
-/*------------------------------------------------------------------------------------*/
-.container-top {
-  position: relative;
-  text-align: center;
-  color: white;
-}
-
-.centered-top {
-  position: absolute;
-  font-family: "Georgia", Times, serif;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-
-/*Other Sttuff*/
-/*------------------------------------------------------------------------------------*/
-p{
-    font-family: Arial, sans-serif;
-    font-size: 25px;
-}
-
-h1{
-  font-family: "Georgia", Times, serif;
-  }
-
 body{
-    padding: 20px;
-    background-color: #FFDEE9;
-    background-image: linear-gradient(0deg, #a5b6b5 0%, #331717 100%);    
-    background-size: cover;
-    background-repeat: no-repeat;
+  font-family: 'Overpass', sans-serif;
+  background-color: #c5c6c7;
+}
+section {
+  background-color: #c5c6c7;
 }
 
-  
-.REALLYBIG{
-    padding-top: 20px;
-    font-size: 50px;
-    font-family: "Georgia", Times, serif;
+
+.hero {
+  background-color: #1f2833;
+  height: 100vh;
+  color: white;
+  font-size: 40px;
+
 }
-.SMOL{
+
+footer {
+  background-color: #c5c6c7;
+  padding-left: 80px;
+  padding-bottom: 70px;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  background-color: #45a29e;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  width: 500px;
   font-size: 30px;
 }
 
-.normaltext{
-    font-size: 12pt;
+ul.show{
+  display: block;
 }
 
-.container{
-    justify-content: center;
-    background-color: white;
+li{
+  /* width: 200px; */
+  text-decoration: none;
 }
-/*About Me formatting*/
-/*------------------------------------------------------------------------------------*/
-.flex-container {
+
+h1{
+  font-size: 100px;
+  margin: 0px;
+  font-weight: 700;
+}
+
+h2{
+  font-size: 50px;
+  font-weight: 700;
+}
+
+p{
+  margin: 0px;
+  font-size: 35px;
+  font-weight: 300;
+}
+
+.subtext{
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.hero-area{
   display: flex;
-  float:left;
-  padding: 10px;
-  justify-content: center;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.flex-item-left {
-  width: 30%;
+.hero-text{
+  margin-left: 80px;
+  margin-bottom: 200px;
 }
 
-.flex-item-right {
-  width: 70%;
+.button{
+  width: 200px;
+  height: 50px;
+  background-color: #45A29E;
+  border-radius: 40px;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 400;
+  padding-top: 5px;
+  margin-top: 20px;
 }
 
-/* Responsive layout - makes a one column layout (100%) instead of a two-column layout (50%) */
-@media (max-width: 800px) {
-  .flex-container{
+.button:hover{
+  background-color: #357e7a;
+}
+
+.button:active{
+  background-color: #8a8a8a;
+  color: #808080;
+}
+
+.socials{
+  padding-bottom: 200px;
+}
+
+.logo{
+  height: 80px;
+  margin: 30px;
+}
+
+.social{
+  margin: 10px;
+}
+
+.sub-section{
+  display: flex;
+  padding: 80px;
+  justify-content: space-around;
+}
+
+.sub-section-alt{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 80px;
+  background-color:  #c5c6c7;
+}
+
+.headshot{
+  width: 200px;
+  border-radius: 300px;
+}
+
+.project-card{
+  width: 300px;
+  height: 500px;
+  box-shadow: 5px 5px 20px rgb(114, 114, 114);
+  margin: 10px;
+  background-color:  #e9e9e9;
+
+}
+
+.project-container{
+  display: flex;
+  justify-content: space-around;
+
+}
+
+@media only screen and (max-width: 1000px) {
+  .project-container{
+    display: flex;
+    flex-wrap:wrap;
+  }
+}
+
+.project-image{
+  margin-top: 25px;
+  width: 250px;
+  /* border-radius: 125px; */
+}
+
+.project-video{
+  margin-top: 25px;
+  width: 250px;
+}
+
+hr{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.project-link{
+  text-decoration: none;
+  color: #ef744b;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.email-link{
+  color: #ef744b;
+}
+
+.hamburger{
+  display: none;
+}
+
+
+.hamburger:focus{
+  outline: 0;
+}
+
+@media only screen and (max-width: 1000px){
+  .hamburger{
     display: block;
-    clear:both;
+    border: 0;
+    background-color: transparent;
+    color: white;
+    font-size: 30px;
+    margin: 20px;
+    align-self: flex-end;
   }
 
-  .flex-item-left {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 50%;
+  ul{
+    display: none;
+    background-color: #45A29E;
+    margin: 0px;;
   }
-  .flex-item-right {
-    max-width:100%;
-    text-align: center;
-    clear:left;
+
+  nav{
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: #45A29E;
   }
-}
 
-
-/*Stuff for Personal Project Formatting*/
-/*------------------------------------------------------------------------------------*/
-.row:after {
-  display: table;
-  width: 100%;
-}
-
-/* This is the formatting of individual cells for the projects */
-.column {
-  display: table-cell;
-  padding: 16px;
-  width: 33.33%;
-  border-style: solid;
-}
-/* resizes the columns if the screen is the size of mobile */
-@media (max-width: 780px) {
-  .column { 
-    display: block;
-    width: 100%;
+  .logo{
+    display: none;
   }
+
 }
 
-.column-image{
-  max-width: 100%;
-  height: auto
-}
+
+
+
+
+
+
+
